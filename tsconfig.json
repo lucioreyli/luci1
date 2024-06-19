@@ -7,9 +7,17 @@
     "module": "esnext",
     "moduleResolution": "bundler",
     "skipLibCheck": true,
-    "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
-    "types": ["react/experimental"],
-    "jsx": "react-jsx"
+    "verbatimModuleSyntax": true,
+    "types": [
+      "react/experimental"
+    ],
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
   }
 }
