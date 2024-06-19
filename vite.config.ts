@@ -1,11 +1,10 @@
-import tsconfigPaths from "vite-tsconfig-paths";
+// @ts-expect-error
 import { fileURLToPath } from "node:url";
 
-/** @type {import('vite').UserConfig} */
 export default {
-	plugins: [
-		tsconfigPaths({
-			root: fileURLToPath(new URL(".", import.meta.url)),
-		}),
-	],
+	resolve: {
+		alias: {
+			"@": fileURLToPath(new URL("./src", import.meta.url)),
+		},
+	},
 };

@@ -3,7 +3,7 @@ export default {
 	content: ["./src/**/*.{js,jsx,ts,tsx}"],
 	theme: {
 		extend: {
-			fontFamily: { mono: "Lekton, monospace" },
+			fontFamily: { mono: "Lekton, monospace", kode: "Kode Mono" },
 		},
 	},
 };
